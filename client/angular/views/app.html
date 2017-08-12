@@ -1,0 +1,14 @@
+<div>
+  <input id="cobra-name" ng-model="$ctrl.name">
+  <input id="cobra-age" ng-model="$ctrl.age">
+  <button type="submit" ng-click="$ctrl.onClick()">Submit</button>
+  <button type="submit" ng-click="$ctrl.onClick2()">Show me all cobras!</button>
+  <div>
+    <ul>
+      <li ng-repeat="cobra in $ctrl.cobras">
+        <p>{{cobra.name}}</p>
+        <p>{{cobra.age}}</p>
+      </li>
+    </ul>
+  </div>
+</div>
